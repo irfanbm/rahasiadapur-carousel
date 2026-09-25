@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8 Trik Cuci Piring Kilat - @rahasiadapursimpel</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=Baloo+2:wght@500;600;700;800&display=swap');
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:#ddd;
+    font-family:'Albert Sans',sans-serif;
+    color:#3f3030;
+  }
+  .wrap{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    align-items:center;
+    padding:30px;
+  }
+  .slide{
+    width:1080px;
+    height:1440px;
+    position:relative;
+    overflow:hidden;
+    background:#fff8ee;
+    flex:none;
+    padding:92px 92px 100px;
+  }
+  .slide:nth-child(even){background:#fff3e7}
+  .blob{
+    position:absolute;
+    border-radius:50%;
+    opacity:.9;
+    z-index:0;
+  }
+  .pink{background:#f7b6c8}
+  .peach{background:#ffc98b}
+  .yellow{background:#ffe18c}
+  .green{background:#b9d9b0}
+  .brown{background:#b98b78}
+  .content{position:relative;z-index:2;height:100%}
+  .eyebrow{
+    font-weight:800;
+    font-size:28px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#b76d65;
+    margin-bottom:26px;
+  }
+  h1,h2,h3,p{margin:0}
+  h1{
+    font-family:'Baloo 2',cursive;
+    font-size:116px;
+    line-height:.9;
+    letter-spacing:-3px;
+  }
+  h2{
+    font-family:'Baloo 2',cursive;
+    font-size:72px;
+    line-height:.92;
+    letter-spacing:-1.5px;
+  }
+  .big{
+    font-family:'Baloo 2',cursive;
+    font-size:48px;
+    font-weight:700;
+    line-height:1.02;
+  }
+  .body{
+    font-size:34px;
+    line-height:1.28;
+    font-weight:500;
+  }
+  .small{
+    font-size:25px;
+    line-height:1.25;
+    font-weight:600;
+  }
+  .tag{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:999px;
+    background:#4d3b3b;
+    color:white;
+    font-weight:800;
+    font-size:25px;
+    margin-bottom:24px;
+  }
+  .footer{
+    position:absolute;
+    bottom:35px;
+    left:92px;
+    right:92px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:5;
+    font-weight:700;
+    font-size:23px;
+    color:#8a6b68;
+  }
+  .wm{font-weight:800}
+  .num{
+    width:54px;height:54px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:#fff;color:#594343;border:3px solid #594343;
+  }
+  .card{
+    background:#fff;
+    border:3px solid #594343;
+    border-radius:38px;
+    padding:36px;
+    box-shadow:10px 10px 0 #e9c3b2;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    margin-top:46px;
+  }
+  .step{
+    min-height:255px;
+    border-radius:30px;
+    padding:28px;
+    background:#fff;
+    border:3px solid #594343;
+  }
+  .icon{
+    font-size:72px;
+    line-height:1;
+    margin-bottom:15px;
+  }
+  .step h3{
+    font-family:'Baloo 2',cursive;
+    font-size:38px;
+    line-height:1;
+    margin-bottom:12px;
+  }
+  .rule{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    margin:32px 0;
+  }
+  .rule .line{height:4px;background:#594343;flex:1}
+  .quote{
+    font-family:'Baloo 2',cursive;
+    font-size:55px;
+    line-height:1.05;
+    font-weight:700;
+  }
+  .list{
+    margin-top:35px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+  .item{
+    display:flex;
+    gap:22px;
+    align-items:flex-start;
+    background:#fff;
+    border-radius:26px;
+    padding:25px 28px;
+    border:3px solid #594343;
+  }
+  .check{
+    flex:none;
+    width:48px;height:48px;border-radius:50%;
+    background:#b9d9b0;
+    display:flex;align-items:center;justify-content:center;
+    font-size:28px;font-weight:900;
+  }
+  .tipbox{
+    margin-top:50px;
+    padding:34px 38px;
+    background:#ffe18c;
+    border:4px solid #594343;
+    border-radius:32px;
+    transform:rotate(-1deg);
+  }
+  .two-col{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;
+    margin-top:55px;
+  }
+  .number{
+    font-family:'Baloo 2',cursive;
+    font-size:160px;line-height:.7;color:#d78978;
+  }
+  .label{
+    font-size:28px;font-weight:800;text-transform:uppercase;letter-spacing:1px;
+  }
+  .highlight{
+    background:linear-gradient(transparent 58%,#ffe18c 58%);
+  }
+  .final{
+    background:#fff3e7 !important;
+  }
+  .final h2{font-size:91px}
+  .final p{max-width:790px;margin-top:30px}
+  .pillrow{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-top:38px}
+  .pill{
+    padding:15px 25px;background:#fff;border:3px solid #594343;
+    border-radius:999px;font-size:25px;font-weight:800;
+  }
+  .deco{
+    position:absolute;font-size:100px;z-index:1;
+  }
+
+  @media print{
+    body{background:white}
+    .wrap{padding:0;gap:0}
+    .slide{page-break-after:always}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 01 COVER -->
+  <section class="slide">
+    <div class="blob pink" style="width:520px;height:520px;right:-160px;top:-120px"></div>
+    <div class="blob yellow" style="width:360px;height:360px;left:-150px;bottom:80px"></div>
+    <div class="deco" style="right:110px;top:310px">🧼</div>
+    <div class="deco" style="left:95px;bottom:245px">🫧</div>
+    <div class="content" style="display:flex;flex-direction:column;justify-content:center">
+      <div class="tag">TIPS DAPUR • CUCI PIRING</div>
+      <h1>CUCI PIRING<br><span style="color:#c87970">KILAT</span><br>LEMAK LUNTUR</h1>
+      <p class="body" style="margin-top:42px;max-width:720px">Piring kotor numpuk bukan horor lagi, Mah. Urutan simpel dan bahan seadanya bikin noda lemak hilang tanpa gosok kuat. ✨</p>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">01</span></div>
+  </section>
+
+  <!-- 02 -->
+  <section class="slide">
+    <div class="blob green" style="width:420px;height:420px;right:-130px;top:-110px"></div>
+    <div class="content">
+      <div class="eyebrow">01 • Sebelum dicuci</div>
+      <h2>Sisa makanan<br>dibuang dulu.</h2>
+      <div class="two-col">
+        <div>
+          <p class="body">Sisa noda dan kuah jangan langsung disiram ke sink, Mah. Buang ke tempat sampah biar saluran gak gampang mampet, lalu siram piringnya sekali biar sisa gak mengering nempel.</p>
+          <div class="tipbox">
+            <p class="quote" style="font-size:42px">Piring kering 1 jam, gosok 5 kali lipat 😩</p>
+          </div>
+        </div>
+        <div style="text-align:center">
+          <div class="number">01</div>
+          <div class="label" style="margin-top:18px">Buang, lalu<br>siram basah</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">02</span></div>
+  </section>
+
+  <!-- 03 -->
+  <section class="slide">
+    <div class="blob peach" style="width:400px;height:400px;left:-140px;top:-130px"></div>
+    <div class="content">
+      <div class="eyebrow">02 • Buat wadah berminyak</div>
+      <h2>Rendam 10 menit,<br>lemak nyerah.</h2>
+      <div class="two-col">
+        <div>
+          <div class="card">
+            <p class="big">Air panas + sabun 🛁</p>
+            <p class="body" style="margin-top:16px">Wadah bekas gulai, mie goreng, atau santan tinggal direndam. Air panas buka lemaknya, sabun bawa sisanya ke bawah.</p>
+          </div>
+          <p class="body" style="margin-top:30px">Barengan 10 menit itu, cuci gelas dan piring biasa dulu. Waktu gak habis buat nunggu.</p>
+        </div>
+        <div style="text-align:center">
+          <div class="number">02</div>
+          <div class="label" style="margin-top:18px">Rendam<br>sambil cuci lain</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">03</span></div>
+  </section>
+
+  <!-- 04 -->
+  <section class="slide">
+    <div class="blob yellow" style="width:460px;height:460px;right:-170px;bottom:-150px"></div>
+    <div class="content">
+      <div class="eyebrow">03 • Soal sabun</div>
+      <h2>Buih banyak<br>bukan tanda bersih.</h2>
+      <div class="rule"><div class="line"></div><span style="font-size:44px">🧼</span><div class="line"></div></div>
+      <div class="tipbox" style="margin-top:10px">
+        <p class="quote">Satu setetes sabun cuci piring cukup buat satu bak cuci.</p>
+      </div>
+      <p class="body" style="margin-top:38px">Kebanyakan sabun bikin busa nempel, dibilas dua kali masih licin. Sisa sabun di piring juga yang bikin bau apek di lap, Mah.</p>
+      <div class="card" style="margin-top:38px">
+        <p class="body">💡 Lebih baik tambah sabun dikit lagi kalau memang berminyak, daripada tuang penuh dari awal.</p>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">04</span></div>
+  </section>
+
+  <!-- 05 -->
+  <section class="slide">
+    <div class="blob pink" style="width:420px;height:420px;left:-150px;bottom:-140px"></div>
+    <div class="content">
+      <div class="eyebrow">04 • Urutan cuci</div>
+      <h2>Gelas dulu,<br>wajan terakhir.</h2>
+      <div class="grid">
+        <div class="step">
+          <div class="icon">🥛</div>
+          <h3>1. Gelas &amp; piring putih</h3>
+          <p class="small">Paling gampang kotor, sekali bilas langsung kinclong.</p>
+        </div>
+        <div class="step">
+          <div class="icon">🥣</div>
+          <h3>2. Mangkuk &amp; piring</h3>
+          <p class="small">Sisa kuah tinggal disikat ringan.</p>
+        </div>
+        <div class="step">
+          <div class="icon">🍳</div>
+          <h3>3. Wajan &amp; panci</h3>
+          <p class="small">Paling berminyak, paling akhir biar minyak gak pindah ke piring bersih.</p>
+        </div>
+        <div class="step">
+          <div class="icon">🧽</div>
+          <h3>4. Bak &amp; spons</h3>
+          <p class="small">Bilas sekalian biar bekas lemak gak nempel buat besok.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">05</span></div>
+  </section>
+
+  <!-- 06 -->
+  <section class="slide">
+    <div class="blob green" style="width:440px;height:440px;right:-150px;top:-130px"></div>
+    <div class="content">
+      <div class="eyebrow">05 • Lemak membandel</div>
+      <h2>Seka dulu,<br>baru cuci.</h2>
+      <div class="two-col">
+        <div>
+          <p class="body">Buat wadah yang berminyak banget, seka pakai kain bekas atau tisu dulu sebelum kena air. Minyak turun duluan, spons gak jadi berminyak.</p>
+          <div class="tipbox">
+            <p class="quote" style="font-size:40px">Spons berminyak bikin piring berikutnya juga berminyak 🫠</p>
+          </div>
+        </div>
+        <div style="text-align:center">
+          <div class="number">05</div>
+          <div class="label" style="margin-top:18px">Kering<br>dulu, basahi<br>belakangan</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">06</span></div>
+  </section>
+
+  <!-- 07 -->
+  <section class="slide">
+    <div class="blob peach" style="width:400px;height:400px;left:-130px;top:-120px"></div>
+    <div class="content">
+      <div class="eyebrow">06 • Terakhir</div>
+      <h2>Bilas air panas,<br>gak ada bercak.</h2>
+      <p class="body" style="margin-top:34px;max-width:840px">Bilas terakhir pakai air panas. Sabun luntur sempurna, kaca gak meninggalkan bintik, dan piring kering sendiri lebih cepat.</p>
+      <div class="list">
+        <div class="item"><div class="check">✓</div><p class="small">Gelas gak buram, langsung jernih lagi</p></div>
+        <div class="item"><div class="check">✓</div><p class="small">Bau sabun gak tersisa di piring makan anak</p></div>
+        <div class="item"><div class="check">✓</div><p class="small">Gak perlu lap basah buat keringin semua</p></div>
+      </div>
+      <div class="tipbox">
+        <p class="quote" style="font-size:42px">Air panas terakhir, piring bersih tanpa lap 💨</p>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">07</span></div>
+  </section>
+
+  <!-- 08 -->
+  <section class="slide">
+    <div class="blob yellow" style="width:430px;height:430px;right:-140px;bottom:-130px"></div>
+    <div class="content">
+      <div class="eyebrow">07 • Setelah kering</div>
+      <h2>Lap bersih,<br>simpan kering.</h2>
+      <div class="two-col">
+        <div>
+          <div class="card">
+            <p class="big">Kain lap ganti tiap 3 hari 🧺</p>
+            <p class="body" style="margin-top:16px">Lap basah yang dipakai terus itu sarang bau apek. Cuci, jemur sampai kering, ganti yang baru.</p>
+          </div>
+          <p class="body" style="margin-top:30px">Piring diangin-anginkan dulu sebelum dimasukkan lemari. Lembap di lemari sama dengan jamur dan bau, Mah.</p>
+        </div>
+        <div style="text-align:center">
+          <div class="number">07</div>
+          <div class="label" style="margin-top:18px">Kering &amp;<br>beri ruang</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">08</span></div>
+  </section>
+
+  <!-- 09 -->
+  <section class="slide">
+    <div class="blob pink" style="width:410px;height:410px;left:-140px;top:-120px"></div>
+    <div class="content">
+      <div class="eyebrow">08 • Biar sehat</div>
+      <h2>Spons &amp; sikat<br>ganti rutin.</h2>
+      <p class="body" style="margin-top:34px;max-width:840px">Spons cuci piring gonta ganti tiap minggu, Mah. Kalau udah bau atau seratnya lebar, kuman pindah terus ke piring bersih.</p>
+      <div class="grid">
+        <div class="step">
+          <div class="icon">📅</div>
+          <h3>Ganti tiap 7 hari</h3>
+          <p class="small">Gak perlu nunggu sobek, bau aja udah tanda buang.</p>
+        </div>
+        <div class="step">
+          <div class="icon">🧴</div>
+          <h3>Rendam sabun</h3>
+          <p class="small">Spons disimpan dalam keadaan bersih, bukan basah bekas makan.</p>
+        </div>
+        <div class="step">
+          <div class="icon">🪥</div>
+          <h3>Sikat kecil buat sela</h3>
+          <p class="small">Sela sendok dan tutup botol, gak lolos di sikat biasa.</p>
+        </div>
+        <div class="step">
+          <div class="icon">✅</div>
+          <h3>Satu spons, satu fungsi</h3>
+          <p class="small">Piring makan beda sama spons lantai atau bak cuci.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">09</span></div>
+  </section>
+
+  <!-- 10 FINAL -->
+  <section class="slide final">
+    <div class="blob pink" style="width:520px;height:520px;left:-230px;top:-180px"></div>
+    <div class="blob green" style="width:500px;height:500px;right:-230px;bottom:-170px"></div>
+    <div class="content" style="display:flex;flex-direction:column;justify-content:center;align-items:center">
+      <div class="tag">SIMPAN DULU YA, MAH ✨</div>
+      <h2>Malam ini coba<br>urutan yang baru?</h2>
+      <p class="body">Satu kebiasaan kecil aja udah kerasa, Mah. Rendam dulu sambil cuci yang ringan, tutup dengan bilas air panas. 🌸</p>
+      <div class="pillrow">
+        <span class="pill">🧼 Buang sisa dulu</span>
+        <span class="pill">🛁 Rendam 10 menit</span>
+        <span class="pill">🥛 Gelas dulu</span>
+        <span class="pill">💨 Bilas air panas</span>
+      </div>
+      <div class="card" style="margin-top:50px;max-width:780px">
+        <p class="big">Follow @rahasiadapursimpel</p>
+        <p class="body" style="margin-top:12px">Tips dapur simpel tiap hari buat ibu-ibu sibuk. Simpan post ini biar gak lupa! 💛</p>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">10</span></div>
+  </section>
+
+</div>
+</body>
+</html>
