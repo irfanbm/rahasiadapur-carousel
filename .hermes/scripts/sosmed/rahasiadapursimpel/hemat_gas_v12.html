@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>5 Trik Masak Hemat Gas & Listrik</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#b8a888;font-family:"Quicksand",-apple-system,sans-serif;color:#3a2f25}
+.carousel{display:flex;flex-direction:column;gap:40px;align-items:center;padding:40px}
+.slide{width:1080px;height:1440px;position:relative;overflow:hidden;border-radius:48px;
+  background:
+    repeating-linear-gradient(0deg, rgba(0,0,0,.012) 0 2px, transparent 2px 4px),
+    radial-gradient(circle at 20% 15%, #d9c9a8, transparent 35%),
+    radial-gradient(circle at 82% 80%, #c4b08c, transparent 40%),
+    linear-gradient(135deg,#cdb993,#bda079);
+  box-shadow:0 40px 90px rgba(0,0,0,.28);
+}
+.slide::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 30% 20%, rgba(255,255,255,.12), transparent 45%),
+             radial-gradient(circle at 75% 85%, rgba(90,60,30,.10), transparent 40%);}
+.paper{position:absolute;inset:42px;border-radius:30px;
+  background:linear-gradient(160deg, rgba(255,250,240,.82), rgba(247,238,220,.74));
+  border:1px solid rgba(120,90,55,.22);
+  box-shadow:0 24px 60px rgba(60,40,20,.18), inset 0 1px 0 rgba(255,255,255,.6);
+  display:flex;flex-direction:column;overflow:hidden}
+.topbar{height:96px;display:flex;align-items:center;justify-content:space-between;padding:0 44px;
+  border-bottom:2px dashed rgba(120,90,55,.30)}
+.brand{font-family:"Caveat",cursive;font-size:38px;font-weight:700;color:#7a5a32;letter-spacing:.01em}
+.counter{font-family:"Caveat",cursive;font-size:34px;font-weight:600;color:#9a7b4f}
+.content{padding:60px 60px;display:flex;flex-direction:column;justify-content:center;flex:1}
+.eyebrow{display:inline-flex;align-self:flex-start;padding:10px 20px;border-radius:999px;
+  background:rgba(196,140,60,.16);border:1px solid rgba(196,140,60,.4);
+  font-family:"Quicksand";font-size:15px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:#a06a1f}
+h1{margin:26px 0 0;font-family:"Caveat",cursive;font-size:92px;line-height:.98;letter-spacing:-1px;color:#3a2f25;max-width:840px}
+.cover .content{padding:56px 64px}
+.cover h1{font-size:132px;line-height:.92;letter-spacing:-2px;max-width:900px}
+.cover p{font-size:27px}
+.cover .card{margin-top:54px}
+p{color:#5e4f3f;font-size:25px;line-height:1.5;font-weight:500}
+.accent{color:#c0701f}
+.card{margin-top:46px;padding:38px 44px;background:rgba(255,252,245,.7);
+  border:1px solid rgba(120,90,55,.22);border-radius:26px;
+  box-shadow:0 16px 40px rgba(60,40,20,.10), inset 0 1px 0 rgba(255,255,255,.6);
+  display:flex;flex-direction:column;gap:8px}
+.card .emoji{font-size:78px;line-height:1;margin-bottom:6px}
+.footer{position:absolute;bottom:30px;left:64px;right:64px;display:flex;justify-content:space-between;
+  color:#7a5a32;font-family:"Quicksand";font-size:15px;font-weight:600}
+.cta{font-family:"Caveat",cursive;font-size:24px;color:#a06a1f}
+</style>
+</head>
+<body>
+<div class="carousel">
+
+<section class="slide cover">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">01 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Hemat Tagihan</div>
+      <h1>Masak Hemat <span class="accent">Gak Bikin Dompet Nangis.</span></h1>
+      <p>5 trik simpel biar tagihan gas &amp; listrik dapur turun tanpa ngurangin porsi masakan.</p>
+      <div class="card">
+        <div class="emoji">&#128161;</div>
+        <p>Tagihan membengkak bukan karena masak sering, tapi karena kebiasaan kecil yang kelewat.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">02 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Trik 01</div>
+      <h1>Merebus Wajib <span class="accent">Pakai Tutup.</span></h1>
+      <p>Air mendidih jauh lebih cepat kalau panci tertutup rapat.</p>
+      <div class="card">
+        <div class="emoji">&#9201;</div>
+        <p>Waktu masak bisa kepotong sampai sepertiga. Gas jadi jauh lebih irit.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">03 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Trik 02</div>
+      <h1>Api Besar Cuma <span class="accent">Bikin Kuah Meluap.</span></h1>
+      <p>Setelah mendidih, kompor gak perlu terus digedekin.</p>
+      <div class="card">
+        <div class="emoji">&#128293;</div>
+        <p>Kecilkan api, cukup jaga riak kecil. Rasa tetap sama, gas hemat separuh.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">04 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Trik 03</div>
+      <h1>Matikan Kompor <span class="accent">10 Menit Lebih Awal.</span></h1>
+      <p>Sisa panas panci masih terus memasak sampai makanan matang sempurna.</p>
+      <div class="card">
+        <div class="emoji">&#127858;</div>
+        <p>Ungkep ayam atau sup, matikan kompor saat hampir matang, tutup rapat, biarkan panas sisa bekerja.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">05 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Trik 04</div>
+      <h1>Mode Warm <span class="accent">Jangan Semalaman.</span></h1>
+      <p>Rice cooker standby panas tiap hari itu nyedot listrik diam-diam.</p>
+      <div class="card">
+        <div class="emoji">&#127834;</div>
+        <p>Hangatkan maksimal 2 jam, lalu pindah ke wadah &amp; matikan colokannya.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">06 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Trik 05</div>
+      <h1>Cabut Colokan <span class="accent">Alat Gak Dipakai.</span></h1>
+      <p>Alat listrik yang standby tetap makan daya walaupun tombolnya mati.</p>
+      <div class="card">
+        <div class="emoji">&#128060;</div>
+        <p>Ketel, blender, oven, mixer: cabut steker sehabis pakai. Kebiasaan kecil, tagihan nurun.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">07 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Bandingan</div>
+      <h1>Boros vs <span class="accent">Irit.</span></h1>
+      <p>Bedanya cuma di cara masak, bukan di jumlah lauk.</p>
+      <div class="card">
+        <div class="emoji">&#9878;</div>
+        <p>Boros: api membara, panci tanpa tutup, kompor menyala terus. Irit: api sedang, panci tertutup, kompor dimatikan lebih awal.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">08 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Peringkat</div>
+      <h1>Trik Paling <span class="accent">Nghemat.</span></h1>
+      <p>Urutan dari yang paling berasa di tagihan akhir bulan.</p>
+      <div class="card">
+        <div class="emoji">&#127942;</div>
+        <p>1. Tutup panci &middot; 2. Kecilkan api &middot; 3. Matikan kompor lebih awal &middot; 4. Batasi mode warm &middot; 5. Cabut colokan.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">09 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Ceklist</div>
+      <h1>Ceklist Dapur <span class="accent">Hemat Energi.</span></h1>
+      <p>Tiga kebiasaan ini yang bikin tagihan turun tiap bulan.</p>
+      <div class="card">
+        <div class="emoji">&#9989;</div>
+        <p>&check; Panci selalu bertutup saat masak<br>&check; Api kompor gak pernah membara terus<br>&check; Colokan alat listrik dicabut sehabis pakai</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Simpan ya, Mah</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="paper">
+    <div class="topbar"><div class="brand">Rahasia Dapur Simpel</div><div class="counter">10 / 10</div></div>
+    <div class="content">
+      <div class="eyebrow">&#10022; Penutup</div>
+      <h1>Hemat Itu <span class="accent">Kebiasaan, Mah.</span></h1>
+      <p>Follow buat trik dapur tiap hari.</p>
+      <div class="card">
+        <div class="emoji">&#10084;</div>
+        <p>Simpan postingan ini &amp; share ke sesama ibu. Masak hemat gak bikin masakan kurang enak.</p>
+      </div>
+    </div>
+    <div class="footer"><span>@rahasiadapursimpel</span><span class="cta">&#9825; Follow @rahasiadapursimpel</span></div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>

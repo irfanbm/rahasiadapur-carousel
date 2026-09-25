@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8 Trik Dapur Bebas Semut & Kecoa - @rahasiadapursimpel</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=Baloo+2:wght@500;600;700;800&display=swap');
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:#ddd;
+    font-family:'Albert Sans',sans-serif;
+    color:#3f3030;
+  }
+  .wrap{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    align-items:center;
+    padding:30px;
+  }
+  .slide{
+    width:1080px;
+    height:1440px;
+    position:relative;
+    overflow:hidden;
+    background:#fff8ee;
+    flex:none;
+    padding:92px 92px 100px;
+  }
+  .slide:nth-child(even){background:#fff3e7}
+  .blob{
+    position:absolute;
+    border-radius:50%;
+    opacity:.9;
+    z-index:0;
+  }
+  .pink{background:#f7b6c8}
+  .peach{background:#ffc98b}
+  .yellow{background:#ffe18c}
+  .green{background:#b9d9b0}
+  .brown{background:#b98b78}
+  .content{position:relative;z-index:2;height:100%}
+  .eyebrow{
+    font-weight:800;
+    font-size:28px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#b76d65;
+    margin-bottom:26px;
+  }
+  h1,h2,h3,p{margin:0}
+  h1{
+    font-family:'Baloo 2',cursive;
+    font-size:116px;
+    line-height:.9;
+    letter-spacing:-3px;
+  }
+  h2{
+    font-family:'Baloo 2',cursive;
+    font-size:72px;
+    line-height:.92;
+    letter-spacing:-1.5px;
+  }
+  .big{
+    font-family:'Baloo 2',cursive;
+    font-size:48px;
+    font-weight:700;
+    line-height:1.02;
+  }
+  .body{
+    font-size:34px;
+    line-height:1.28;
+    font-weight:500;
+  }
+  .small{
+    font-size:25px;
+    line-height:1.25;
+    font-weight:600;
+  }
+  .tag{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:999px;
+    background:#4d3b3b;
+    color:white;
+    font-weight:800;
+    font-size:25px;
+    margin-bottom:24px;
+  }
+  .footer{
+    position:absolute;
+    bottom:35px;
+    left:92px;
+    right:92px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:5;
+    font-weight:700;
+    font-size:23px;
+    color:#8a6b68;
+  }
+  .wm{font-weight:800}
+  .num{
+    width:54px;height:54px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:#fff;color:#594343;border:3px solid #594343;
+  }
+  .card{
+    background:#fff;
+    border:3px solid #594343;
+    border-radius:38px;
+    padding:36px;
+    box-shadow:10px 10px 0 #e9c3b2;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    margin-top:46px;
+  }
+  .step{
+    min-height:255px;
+    border-radius:30px;
+    padding:28px;
+    background:#fff;
+    border:3px solid #594343;
+  }
+  .icon{
+    font-size:72px;
+    line-height:1;
+    margin-bottom:15px;
+  }
+  .step h3{
+    font-family:'Baloo 2',cursive;
+    font-size:38px;
+    line-height:1;
+    margin-bottom:12px;
+  }
+  .rule{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    margin:32px 0;
+  }
+  .rule .line{height:4px;background:#594343;flex:1}
+  .quote{
+    font-family:'Baloo 2',cursive;
+    font-size:55px;
+    line-height:1.05;
+    font-weight:700;
+  }
+  .list{
+    margin-top:35px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+  .item{
+    display:flex;
+    gap:22px;
+    align-items:flex-start;
+    background:#fff;
+    border-radius:26px;
+    padding:25px 28px;
+    border:3px solid #594343;
+  }
+  .check{
+    flex:none;
+    width:48px;height:48px;border-radius:50%;
+    background:#b9d9b0;
+    display:flex;align-items:center;justify-content:center;
+    font-size:28px;font-weight:900;
+  }
+  .tipbox{
+    margin-top:50px;
+    padding:34px 38px;
+    background:#ffe18c;
+    border:4px solid #594343;
+    border-radius:32px;
+    transform:rotate(-1deg);
+  }
+  .two-col{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;
+    margin-top:55px;
+  }
+  .number{
+    font-family:'Baloo 2',cursive;
+    font-size:160px;line-height:.7;color:#d78978;
+  }
+  .label{
+    font-size:28px;font-weight:800;text-transform:uppercase;letter-spacing:1px;
+  }
+  .highlight{
+    background:linear-gradient(transparent 58%,#ffe18c 58%);
+  }
+  .final{
+    display:flex;flex-direction:column;justify-content:center;
+    text-align:center;align-items:center;
+  }
+  .final h2{font-size:91px}
+  .final p{max-width:790px;margin-top:30px}
+  .pillrow{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-top:38px}
+  .pill{
+    padding:15px 25px;background:#fff;border:3px solid #594343;
+    border-radius:999px;font-size:25px;font-weight:800;
+  }
+  .deco{
+    position:absolute;font-size:100px;z-index:1;
+  }
+
+  @media print{
+    body{background:white}
+    .wrap{padding:0;gap:0}
+    .slide{page-break-after:always}
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<section class="slide">
+    <div class="blob pink" style="width:520px;height:520px;right:-160px;top:-120px"></div>
+    <div class="blob yellow" style="width:360px;height:360px;left:-150px;bottom:80px"></div>
+    <div class="deco" style="right:110px;top:310px">&#x2728;</div>
+    <div class="deco" style="left:95px;bottom:245px">&#x1F41C;</div>
+    <div class="content" style="display:flex;flex-direction:column;justify-content:center">
+      <div class="tag">DAPUR BERSIH &bull; MASAK NIKMAT</div>
+      <h1>8 TRIK DAPUR<br><span style="color:#c87970">BEBAS SEMUT</span><br>&amp; KECOA &#x1F33F;</h1>
+      <p class="body" style="margin-top:42px;max-width:690px">Cara alami &amp; praktis biar makanan &amp; sudut dapur gak diserbu hama &#x1F606;</p>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">01</span></div>
+  </section>
+
+<section class="slide">
+    <div class="blob green" style="width:420px;height:420px;right:-130px;top:-110px"></div>
+    <div class="content">
+      <div class="eyebrow">01 &bull; Semprot Cuka &amp; Air</div>
+      <h2>Hapus jejak<br>feromon semut &#x1F41C;</h2>
+      <div class="two-col">
+        <div>
+          <p class="body">Semut jalan ngikutin jejak kimia rekannya. Cuka efektif mutus jalur mereka.</p>
+          <div class="tipbox">
+            <div class="big">Resep Semprotan:</div>
+            <p class="body" style="margin-top:12px">Campur cuka putih &amp; air (1:1), semprot ke meja dapur &amp; pinggiran dinding.</p>
+          </div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-size:145px">&#x1F9FA;</div>
+          <div class="big">Cuka Putih</div>
+          <p class="small" style="margin-top:10px">Semut benci bau asam cuka tajam!</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">02</span></div>
+  </section>
+
+<section class="slide">
+    <div class="blob peach" style="width:500px;height:500px;left:-230px;top:180px"></div>
+    <div class="content">
+      <div class="eyebrow">02 &bull; Daun Salam Penolak Kecoa</div>
+      <h2>Aroma herbal<br>bikin kecoa kabur &#x1F343;</h2>
+      <p class="body" style="margin-top:28px;max-width:800px">Kecoa sangat sensitif sama bau wangi herbal menyengat seperti daun salam segar/kering.</p>
+      <div class="grid">
+        <div class="step"><div class="icon">&#x1F343;</div><h3>Daun Salam</h3><p class="small">Remas &amp; taruh di sudut lemari dapur.</p></div>
+        <div class="step"><div class="icon">&#x1F9C4;</div><h3>Bawang Putih</h3><p class="small">Geprek lalu taruh dekat tempat sampah.</p></div>
+        <div class="step"><div class="icon">&#x1F33F;</div><h3>Serai Geprek</h3><p class="small">Sebarkan di celah bawah kompor.</p></div>
+        <div class="step"><div class="icon">&#x2615;</div><h3>Bubuk Kopi</h3><p class="small">Kecoa tak suka bau kopi hitam pekat.</p></div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">03</span></div>
+  </section>
+
+<section class="slide">
+    <div class="blob pink" style="width:390px;height:390px;right:-120px;bottom:110px"></div>
+    <div class="content">
+      <div class="eyebrow">03 &bull; Tutup Botol Manis</div>
+      <h2>Wadah gula &amp;<br>kecap kedap udara &#x1FACF;</h2>
+      <div class="card" style="margin-top:50px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center">
+        <div>
+          <div class="number">&#x1F36F;</div>
+          <div class="big">Wadah Toples</div>
+          <p class="body" style="margin-top:12px">Simpan gula, sirup &amp; susu kental di toples ulir karet.</p>
+        </div>
+        <div style="font-size:180px;text-align:center">&#x1F41C;</div>
+      </div>
+      <div class="list">
+        <div class="item"><div class="check">&#x2713;</div><p class="body">Lap leher botol kecap/susu setelah dipakai.</p></div>
+        <div class="item"><div class="check">&#x2713;</div><p class="body">Beri piring berisi sedikit air di alas wadah gula.</p></div>
+        <div class="item"><div class="check">&#x2713;</div><p class="body">Ikat bungkus bahan manis pakai karet gelang rapat.</p></div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">04</span></div>
+  </section>
+
+<section class="slide">
+    <div class="blob yellow" style="width:520px;height:520px;right:-220px;top:-170px"></div>
+    <div class="content">
+      <div class="eyebrow">04 &bull; Jangan Ada Air Tergenang</div>
+      <h2>Sumber minum<br><span class="highlight">utama kecoa</span> &#x1F7E0;</h2>
+      <p class="body" style="margin-top:25px;max-width:800px">Kecoa bisa bertahan tanpa makanan, tapi bakal mati kalau gak nemu air di dapur.</p>
+      <div class="grid" style="margin-top:55px">
+        <div class="step" style="background:#ffe9c7"><div class="icon">&#x1F7E0;</div><h3>Wastafel</h3><p class="small">Keringkan bak wastafel sebelum tidur.</p></div>
+        <div class="step" style="background:#ffd6dc"><div class="icon">&#x1F9FA;</div><h3>Spons</h3><p class="small">Peras &amp; gantung spons cuci piring.</p></div>
+        <div class="step" style="background:#d9ebd3"><div class="icon">&#x1F6BF;</div><h3>Kebocoran</h3><p class="small">Perbaiki pipa bawah wastafel bocor.</p></div>
+        <div class="step" style="background:#d9e8ef"><div class="icon">&#x2728;</div><h3>Tutup Bak</h3><p class="small">Pasang saringan rapat di lubang air.</p></div>
+      </div>
+      <div class="tipbox" style="margin-top:35px">
+        <p class="big">Kunci Utama: Dapur kering di malam hari!</p>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">05</span></div>
+  </section>
+
+<section class="slide">
+    <div class="blob green" style="width:440px;height:440px;left:-180px;bottom:-100px"></div>
+    <div class="content">
+      <div class="eyebrow">05 &bull; Tabur Kapur / Baking Soda</div>
+      <h2>Benteng pertahanan<br>di celah dapur &#x1F9F1;</h2>
+      <div class="two-col" style="grid-template-columns:.8fr 1.2fr">
+        <div style="font-size:190px;text-align:center">&#x1F9F9;</div>
+        <div>
+          <p class="body">Baking soda bikin perut hama kembung, sedangkan kapur ajaib halangi semut lewat.</p>
+          <div class="list" style="margin-top:30px">
+            <div class="item"><div class="check">1</div><p class="body">Gariskan kapur ajaib di kaki meja &amp; lemari</p></div>
+            <div class="item"><div class="check">2</div><p class="body">Campur baking soda + gula halus buat umpan</p></div>
+            <div class="item"><div class="check">3</div><p class="body">Sebarkan di bawah kompor &amp; sudut kulkas</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:55px;text-align:center">
+        <p class="big">Aman &amp; Alami &#x2728;</p>
+        <p class="body" style="margin-top:10px">Gak bikin racun berbahaya bertebaran dekat bahan makanan keluarga.</p>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">06</span></div>
+  </section>
+
+<section class="slide">
+    <div class="blob peach" style="width:470px;height:470px;right:-180px;bottom:-120px"></div>
+    <div class="content">
+      <div class="eyebrow">06 &bull; Bersihkan Kerak Minyak</div>
+      <h2>Lantai &amp; kompor<br>jangan lengket! &#x1F9FA;</h2>
+      <div class="card" style="margin-top:55px">
+        <p class="quote">Kerak minyak di lantai &amp; kompor magnet paling kuat buat semut &amp; kecoa...</p>
+        <div class="rule"><div class="line"></div><div style="font-size:70px">&#x1F9FC;</div><div class="line"></div></div>
+        <p class="body">Pel lantai dapur pakai air hangat + sedikit karbol aroma serai tiap malam.</p>
+      </div>
+      <div class="grid" style="margin-top:35px">
+        <div class="step"><div class="icon">&#x1F9FC;</div><h3>Pel Serai</h3><p class="small">Karbol serai usir semut &amp; kecoa.</p></div>
+        <div class="step"><div class="icon">&#x1F9FA;</div><h3>Lap Kompor</h3><p class="small">Sapu bersih sisa minyak gorengan.</p></div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">07</span></div>
+  </section>
+
+<section class="slide">
+    <div class="blob pink" style="width:500px;height:500px;left:-220px;top:-170px"></div>
+    <div class="content">
+      <div class="eyebrow">07 &bull; Kosongkan Sampah Basah Malam Hari</div>
+      <h2>Restoran malam<br>bagi si kecoa &#x1F5D1;&#xFE0F;</h2>
+      <div style="margin-top:55px;max-width:520px">
+        <p class="body">Jangan biarkan kantong sampah sisa lauk &amp; sayur terbuka semalaman.</p>
+        <div class="tipbox">
+          <p class="big">Ikat Sampah Rapat</p>
+          <p class="small" style="margin-top:10px">Ikat plastik sampah basah lalu buang ke tong luar rumah sebelum tidur.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">08</span></div>
+  </section>
+
+<section class="slide">
+    <div class="blob yellow" style="width:450px;height:450px;right:-170px;top:50px"></div>
+    <div class="content">
+      <div class="eyebrow">08 &bull; Cek Kulit Bawang &amp; Kardus</div>
+      <h2>Sarang tersembunyi<br>yang sering lolos &#x1F4E6;</h2>
+      <div class="two-col">
+        <div>
+          <div class="number">&#x1F4E6;</div>
+          <div class="label">KARDUS BEKAS</div>
+          <p class="body" style="margin-top:18px">Tempat favorit kecoa bertelur karena hangat &amp; lembap.</p>
+        </div>
+        <div class="card">
+          <div class="big">Bersihkan Rutin &#x1F9F9;</div>
+          <div class="list" style="margin-top:25px">
+            <div class="item"><div class="check">&#x2713;</div><p class="small">Buang kardus paket bekas belanja</p></div>
+            <div class="item"><div class="check">&#x2713;</div><p class="small">Bersihkan reruntuhan kulit bawang</p></div>
+            <div class="item"><div class="check">&#x2713;</div><p class="small">Angkat rak bumbu 1x seminggu</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="tipbox" style="margin-top:55px;text-align:center">
+        <p class="quote">&ldquo;Kardus &amp; tumpukan kertas bekas rumah mewah kecoa!&rdquo;</p>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">09</span></div>
+  </section>
+
+<section class="slide final">
+    <div class="blob pink" style="width:520px;height:520px;left:-230px;top:-180px"></div>
+    <div class="blob green" style="width:500px;height:500px;right:-230px;bottom:-170px"></div>
+    <div class="content" style="display:flex;flex-direction:column;justify-content:center;align-items:center">
+      <div class="tag">SAVE POST INI &#x2728;</div>
+      <h2>Dapur bersih,<br>keluarga tenang &amp; sehat!</h2>
+      <p class="body">Coba 1 trik sederhana hari ini ya bund! Bebas hama di dapur &#x1F33F;&#x1F499;</p>
+      <div class="pillrow">
+        <span class="pill">&#x1F9FA; Semprot Cuka</span>
+        <span class="pill">&#x1F343; Daun Salam</span>
+        <span class="pill">&#x1FACF; Toples Rapat</span>
+        <span class="pill">&#x2728; Dapur Kering</span>
+      </div>
+      <div class="card" style="margin-top:50px;max-width:780px">
+        <p class="big">Follow @rahasiadapursimpel</p>
+        <p class="body" style="margin-top:12px">Dapatkan trik seputar dapur &amp; rumah tangga setiap hari! &#x1F338;</p>
+      </div>
+    </div>
+    <div class="footer"><span class="wm">@rahasiadapursimpel</span><span class="num">10</span></div>
+  </section>
+
+</div>
+</body>
+</html>
